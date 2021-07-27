@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    /* max-width: 1024px; */
+    background-color: black;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.top-nav{
+    background-color: black;
+    max-width: 100%;
+}
+
+.top-nav > ul > li{
+    list-style-type: none;
+}
+
+.left-top-nav{
+    display: flex;
+    /* background-color: blue; */
+    width: 50%;
+    float: left;
+}
+
+.right-top-nav {
+    display: flex;
+    /* background-color: chartreuse; */
+}
