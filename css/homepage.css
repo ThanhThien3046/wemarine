@@ -1,28 +1,300 @@
-.header{
+/* 
+Red : #E60014
+BLUE : #0066FF
+YELLOW: #FFF000
+Background: #F4FFFF */
+
+.logo{
+    width: 45px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hambuger-menu{
+    cursor: pointer;
+    display: block;
+    padding-bottom: 0;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 58px;
+  padding: 5px;
+  z-index: 2;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  background: #fff;
+  padding-top: 10px;
+}
+.hamburger span {
+  position: absolute;
+  left: 13px;
+  background: #0066FF;
+  width: 28px;
+  height: 3px;
+  transition: transform 0.3s;
+}
+.top-line {
+  top: 15px;
+  color: black;
+}
+.center-line {
+  top: 25px;
+}
+.bottom-line {
+  top: 35px;
+}
+.top-line.active {
+  transform: translateY(10px) rotate(135deg);
+}
+.center-line.active {
+  opacity: 0;
+}
+.bottom-line.active {
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+.icon-list{
+  display: flex;
+  margin-top: -35px;
+  position: absolute;
+  text-align: center;
+  right: 50px;
+}
+
+.sub-icon-list a p{
+  margin-right: 7px;
+  font-size: 8px;
+}
+
+.banner{
+  /* background-color: burlywood; */
+  background-image: url('../images/banner01.jpg');
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slideshow-container{
+  /* max-width: 1000px; */
+  width: 100%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #FFF000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display:inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #FFF000;
+}
+
+.topbar{
+  display: none;
+}
+
+.top-menu{
+  display: none;
+}
+
+@media screen and (min-width:991px){
+  .header{
+      width: 100%;
+      /* background-color: rgb(30, 87, 194); */
+      margin: 0 auto;
+      color: #fff;
+      /* max-width: 1024px; */
+  }
+  .top-nav > ul > li{
+      list-style-type: none;
+      padding-right: 20px;
+  }
+  
+  .left-top-nav{
+      display: flex;
+      width: 96%;
+      float: left;
+  }
+  
+  .right-top-nav {
+      display: flex;
+  }
+  
+  .menu{
+      /* background-color: blue; */
+  }
+  .logo{
+      width: 10px;
+      height: 10px;
+      background-image: url('images/wemarine.jpg');
+  }
+  .hambuger-menu{
+    display: none;
+  }
+  .icon-list{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .topbar{
+    background-color: black;
     width: 100%;
-    /* max-width: 1024px; */
-    background-color: black;
     margin: 0 auto;
+    display: block;
+  }
+  .topbarcontent{
+    width: 100%;
+    max-width: 1024px;
     color: #fff;
-}
-
-.top-nav{
-    background-color: black;
-    max-width: 100%;
-}
-
-.top-nav > ul > li{
-    list-style-type: none;
-}
-
-.left-top-nav{
+    margin: 0 auto;
     display: flex;
-    /* background-color: blue; */
-    width: 50%;
+    justify-content: space-between;
+  }
+
+  .leftbar{
     float: left;
-}
+    padding-right: 100px;
+  }
 
-.right-top-nav {
+  .leftbar  span{
+    font-size: 14px;
+  }
+
+  .top-menu{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    /* background-color: blueviolet; */
+    /* position: fixed; */
+  }
+
+  .topmenulist{
+    list-style-type: none;
     display: flex;
-    /* background-color: chartreuse; */
+    font-size: 15px;
+    padding-top: 30px;
+    float: left;
+  }
+
+  .topmenulist li{
+    margin-right: 20px;
+  }
+
+  .logoleft{
+    width: 170px;
+    margin-top: 5px;
+    background-image: url(../images/wemarine.jpg);
+    background-size: cover;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+
+  .slideshow-container{
+    width: 100%;
+    clear: both;
+    padding-top: 20px;
+  }
+  .slideshow-container img{
+    height: 390px;
+  }
+
+  .prev, .next {
+    top: 65%;
+  }
+
+  .top-button{
+    float: left;
+  }
+  .btn-tourorder{
+    padding: 10px 30px;
+    background-color: #0066FF;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .btn-carorder{
+    padding: 10px 30px;
+    background-color: #E60014;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .main-content{
+    /* background-color: darkkhaki; */
+    height: 500px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+  }
+
+  .content-block{
+    width: 15%;
+    height: 300px;
+    /* background-color: darkmagenta; */
+    border: 1px solid #0066FF;
+  }
+
+  .content-img{
+    background-image: url('../images/image1.jpg');
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+  }
 }

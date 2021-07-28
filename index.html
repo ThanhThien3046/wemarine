@@ -7,28 +7,221 @@
     <link rel="stylesheet" type="text/css" href="css/reboot.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/awesome.min.css"> -->
+    <script type="text/javascript" src="js/jquery360.min.js"></script>
     <title>we-marine</title>
 </head>
 <body>
-    <div class="header">
-        <div class="top-nav">
-            <ul class="left-top-nav">
-                <li><i class="fas fa-envelope"></i>wemarine@info.co.jp</li>
-                <li><i class="fas fa-phone-rotary"></i>dsds</li>
-                <li>dsds</li>
-                <li>dsds</li>
-            </ul>
-
-            <ul class="right-top-nav">
-                <li>dsds</li>
-                <li>dsds</li>
-                <li>dsds</li>
-                <li>dsds</li>
-            </ul>
+    <div class="topbar">
+        <div class="topbarcontent">
+            <div class="leftbar">
+                <i class="fas fa-envelope"></i>
+                <span>wemarine@info.co.jp</span>
+                <i class="fas fa-envelope"></i>
+                <span>wemarine@info.co.jp</span>
+                <i class="fas fa-envelope"></i>
+                <span>090-1234-4567</span>
+            </div>
+            <div class="rightbar">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
         </div>
-        <div class="menu"></div>
-        <div class="banner"></div>
+    </div>
+    <div class="top-menu">
+        <div class="logoleft"></div>
+        <ul class="topmenulist">
+            <li>
+                <a href="">
+                    <span>HOME</span>
+                    <p>ホーム</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>TOURIST</span>
+                    <p>ツアー案内</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>SPOT</span>
+                    <p>観光スポット</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>SHOP</span>
+                    <p>ショップ案内</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>PHOTO</span>
+                    <p>フォトギャラリー</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span>Q&A</span>
+                    <p>よくある質問</p>
+                </a>
+            </li>
+        </ul>
+        <div class="top-button">
+            <a href="">
+                <p class="btn-tourorder">ツアー予約</p>
+            </a>
+            <a href="">
+                <p class="btn-carorder">レンタカー予約</p>
+            </a>
+        </div>
+    </div>
+    <div class="header">
+        <div class="nav-top">
+            <img src="images/wemarine.jpg" alt="" class="logo">
+            <div class="icon-list">
+                <div class="sub-icon-list">
+                    <a href="">
+                        <i class="fas fa-suitcase-rolling"></i>
+                        <p>ツアー予約</p>
+                    </a>
+                </div>
+                <div class="sub-icon-list">
+                    <a href="">
+                        <i class="fas fa-car"></i>
+                        <p>レンタカー</p>
+                    </a>
+                </div>
+                <div class="sub-icon-list">
+                    <a href="">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>電話する</p>
+                    </a>
+                </div>
+            </div>
+            <div class="hambuger-menu">
+                <!-- hamburger button -->
+                <button id="js-hamburger" class="hamburger" type="button">
+                    <span id="js-top-line" class="top-line"></span>
+                    <span id="js-center-line" class="center-line"></span>
+                    <span id="js-bottom-line" class="bottom-line"></span>
+                </button>
+                <!-- end hamburger button -->
+            </div>
+        </div>
+        <!-- <div class="banner">
+        </div> -->
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/banner01.jpg" style="width:100%;">
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/banner02.jpg" style="width:100%; height: 300px;">
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/banner03.jpg" style="width:100%; height: 300px;">
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+        <br>
+        <!-- <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> -->
+    </div>
+    <hr>
+    <div class="main-content">
+        <div class="content-block">
+            <!-- <img src="images/image1.jpg" alt=""> -->
+            <div class="content-img">
+
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+
+        <div class="content-block">
+            
+        </div>
+
+        <div class="content-block">
+            
+        </div>
+
+        <div class="content-block">
+            
+        </div>
     </div>
 </body>
+<script>
+    $(function() {
+    $("#js-hamburger").click(function () {
+        $("#js-top-line").toggleClass("active");
+        $("#js-center-line").toggleClass("active");
+        $("#js-bottom-line").toggleClass("active");
+        $("#js-nav").toggleClass("show");
+            $("body").toggleClass("show");
+    });
+    });
+
+    // banner
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+</script>
 </html>
