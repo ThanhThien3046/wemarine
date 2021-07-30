@@ -1,0 +1,24 @@
+{
+  "name": "wemarine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "flickity": "^2.2.2",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThanhThien3046/wemarine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThanhThien3046/wemarine/issues"
+  },
+  "homepage": "https://github.com/ThanhThien3046/wemarine#readme",
+  "description": ""
+}
