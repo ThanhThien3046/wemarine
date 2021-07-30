@@ -3,7 +3,55 @@ Red : #E60014
 BLUE : #0066FF
 YELLOW: #FFF000
 Background: #F4FFFF */
-
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+    font-family: "segoe UI", 'Noto Sans JP', "游ゴシック", 
+    YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 
+    Verdana, "メイリオ", Meiryo, sans-serif;
+}
+a:hover{
+    text-decoration: none;
+}
+ol, ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
 .logo{
     width: 45px;
     height: 30px;
@@ -29,8 +77,9 @@ Background: #F4FFFF */
   border: none;
   box-sizing: border-box;
   color: white;
-  background: #fff;
+  background: transparent;
   padding-top: 10px;
+
 }
 .hamburger span {
   position: absolute;
@@ -89,7 +138,7 @@ Background: #F4FFFF */
   width: 100%;
   position: relative;
   margin: auto;
-  height: 300px;
+  /* height: 300px; */
   margin-top: 20px;
   background-size: cover;
   background-position: center;
@@ -143,6 +192,102 @@ Background: #F4FFFF */
   display: none;
 }
 
+.main-content{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content-block{
+  width: 40.33%;
+  margin:0 auto;
+  height: 300px;
+  /* background-color: darkmagenta; */
+  border: 1px solid #acafaf;
+  margin-bottom: 40px;
+}
+
+.content-img > img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content-title{
+  color: #0066FF;
+  font-size: 5px;
+  font-weight: bold;
+}
+
+.content-txt{
+  font-size: 10px;
+}
+.price{
+  color: #E60014;
+  font-weight: 600;
+  font-size: 12px;
+}
+.round{
+  border-radius: 50%;
+  background-color: #0066ff;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 5px;
+  float: right;
+  margin-right: 5px;
+}
+.top{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.nav-top{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+.line{
+  text-align: center;
+  margin: 20px auto;
+}
+.bar{
+  height: 1px;
+  width: 35%;
+  background: #0066FF;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-showdetail{
+  color: #E60014;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-showdetail > span{
+  border: 1px solid #acafaf;
+  padding: 5px;
+}
+
+.pagrap{
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.35);
+  background-image: url('../images/banner02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.pagrap > p:nth-child(1){
+  color: #FFF000;
+}
 @media screen and (min-width:991px){
   .header{
       width: 100%;
@@ -188,6 +333,7 @@ Background: #F4FFFF */
     width: 100%;
     margin: 0 auto;
     display: block;
+    padding: 5px;
   }
   .topbarcontent{
     width: 100%;
@@ -209,13 +355,13 @@ Background: #F4FFFF */
 
   .top-menu{
     width: 100%;
-    max-width: 1024px;
+    /* max-width: 1024px; */
     margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
     display: block;
-    /* background-color: blueviolet; */
-    /* position: fixed; */
+    z-index: 1;
+    background-color: #fff;
+    position: fixed;
+    padding-left: 120px;
   }
 
   .topmenulist{
@@ -224,6 +370,8 @@ Background: #F4FFFF */
     font-size: 15px;
     padding-top: 30px;
     float: left;
+    margin-left: 15px;
+    text-align: center;
   }
 
   .topmenulist li{
@@ -244,7 +392,7 @@ Background: #F4FFFF */
   .slideshow-container{
     width: 100%;
     clear: both;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .slideshow-container img{
     height: 390px;
@@ -256,6 +404,7 @@ Background: #F4FFFF */
 
   .top-button{
     float: left;
+    margin-top: 10px;
   }
   .btn-tourorder{
     padding: 10px 30px;
@@ -263,6 +412,7 @@ Background: #F4FFFF */
     color: #fff;
     text-align: center;
     font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .btn-carorder{
@@ -274,27 +424,127 @@ Background: #F4FFFF */
   }
 
   .main-content{
-    /* background-color: darkkhaki; */
-    height: 500px;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 130px;
+    flex-wrap: wrap;
+    position: relative;
+    /* top: 150px; */
   }
 
   .content-block{
-    width: 15%;
+    width: 20%;
     height: 300px;
     /* background-color: darkmagenta; */
-    border: 1px solid #0066FF;
+    border: 1px solid #acafaf;
+    margin-right: 20px;
+    margin-bottom: 40px;
   }
 
-  .content-img{
-    background-image: url('../images/image1.jpg');
-    height: 50%;
-    background-position: center;
-    background-size: cover;
+  .content-img > img{
+    width: 100%;
+    height: 150px;
   }
+  .content-title{
+    color: #0066FF;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .content-txt{
+    font-size: 14px;
+  }
+  .price{
+    color: #E60014;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .round{
+    border-radius: 50%;
+    background-color: #0066ff;
+    padding: 3px 6px;
+    color: #fff;
+    font-size: 10px;
+    float: right;
+    margin-right: 5px;
+  }
+
+  .content{
+    margin-left: 5px;
+  }
+
+  .leftbar i:not(:first-child){
+    margin-left: 10px;
+  }
+
+  .rightbar i:not(:last-child){
+    margin-right: 10px;
+  }
+
+  .rightbar i{
+    font-size: 22px;
+  }
+
+  .rightbar{
+    margin-right: 55px;
+  }
+  .topmenulist li:active{
+    border-bottom: 2px solid #E60014;
+  }
+
+  .line{
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+  }
+  
+  .line > span{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .line span::before,
+  .line span::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background: #0066FF;
+    top: 50%;
+    width:400px;
+  }
+  
+  .line > span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  
+  .line > span:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+  .bar{
+    display: none;
+  }
+
+  .pagrap{
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.35);
+    background-image: url('../images/banner02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    padding: 120px 155px;
+    line-height: 2em;
+  }
+  .pagrap > p:nth-child(1){
+    color: #FFF000;
+  }
+
 }
