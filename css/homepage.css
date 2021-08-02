@@ -412,13 +412,14 @@ overflow: hidden;
 
 .slide-controls {
   position:absolute;
-  top:45%;
+  top:50%;
   z-index:2;
   font-size: 1.5em;
   font-weight:bold;
-  background:#fff;
+  /* background:#fff; */
   padding: 1px 0px;
-  opacity:0.3;
+  /* opacity:0.3; */
+  color: #FFF000;
 }
 
 .slide-controls:hover {
@@ -639,6 +640,11 @@ overflow: hidden;
 .star{
   color: #FFF000;
 }
+
+.pagrap-mid-txt{
+  padding: 20px 0px;
+}
+
 @media screen and (min-width:768px){
   
 }
