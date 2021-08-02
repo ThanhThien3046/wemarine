@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/reboot.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" /> -->
     <!-- <link rel="stylesheet" href="/flickity/css/flickity.css" media="screen"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/awesome.min.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="/css/awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/awesome.min.css">
     <script type="text/javascript" src="js/jquery360.min.js"></script>
     <title>we-marine</title>
 </head>
@@ -21,9 +20,9 @@
                 <div class="leftbar">
                     <i class="fas fa-envelope"></i>
                     <span>wemarine@info.co.jp</span>
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-phone-rotary"></i>
                     <span>wemarine@info.co.jp</span>
-                    <i class="fas fa-envelope"></i>
+                    <i class="fad fa-phone-square-alt"></i>
                     <span>090-1234-4567</span>
                 </div>
                 <div class="rightbar">
@@ -35,56 +34,58 @@
             </div>
         </div>
         <div class="top-menu">
-            <div class="logoleft"></div>
+            <div class="logoleft">
+                <img src="images/wemarine.jpg" alt="" width="140px" height="90px">
+            </div>
             <ul class="topmenulist">
                 <li>
                     <a href="">
-                        <span>HOME</span>
+                        <span class="menu-title">HOME</span>
                         <p>ホーム</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="">
-                        <span>TOURIST</span>
+                        <span class="menu-title">TOURIST</span>
                         <p>ツアー案内</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="">
-                        <span>SPOT</span>
+                        <span class="menu-title">SPOT</span>
                         <p>観光スポット</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="">
-                        <span>SHOP</span>
+                        <span class="menu-title">SHOP</span>
                         <p>ショップ案内</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="">
-                        <span>PHOTO</span>
+                        <span class="menu-title">PHOTO</span>
                         <p>フォトギャラリー</p>
                     </a>
                 </li>
     
                 <li>
                     <a href="">
-                        <span>Q&A</span>
+                        <span class="menu-title">Q&A</span>
                         <p>よくある質問</p>
                     </a>
                 </li>
             </ul>
             <div class="top-button">
                 <a href="">
-                    <p class="btn-tourorder">ツアー予約</p>
+                    <p class="btn-tourorder">ツアー予約 <span class="arrow">></span></p>
                 </a>
                 <a href="">
-                    <p class="btn-carorder">レンタカー予約</p>
+                    <p class="btn-carorder">レンタカー予約 <span class="arrow">></span></p>
                 </a>
             </div>
         </div>
@@ -114,6 +115,18 @@
                 </div>
             </div>
             <div class="hambuger-menu">
+                <div id="js-nav" class="navigation">
+                    <nav class="nav">
+                        <ul class="list">
+                            <li><a href="index.html">ホーム<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="">ツアー案内<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="">観光スポット<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="">ショップ案内<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="">フォトギャラリー<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="">よくある質問<i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <!-- hamburger button -->
                 <button id="js-hamburger" class="hamburger" type="button">
                     <span id="js-top-line" class="top-line"></span>
@@ -194,7 +207,7 @@
         <span>
             宮古島おすすめツアー<br>
             <span class="bar"></span>
-            <p>TOURIST</p>
+            <p class="subtxt">TOURIST</p>
         </span>
     </div>
     <div class="main-content">
@@ -342,7 +355,7 @@
         <span>
             宮古島の人気観光スポット<br>
             <span class="bar"></span>
-            <p>TOURIST SPOT</p>
+            <p class="subtxt">TOURIST SPOT</p>
         </span>
     </div>
     <div class="main-content">
@@ -460,7 +473,7 @@
         <ul class="pagrap_ul_content">
             <li>
                 <img src="images/スポット12.jpg" alt="" class="round-img">
-                <div>
+                <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -479,7 +492,7 @@
             </li>
             <li>
                 <img src="images/スポット11.jpg" alt="" class="round-img">
-                <div>
+                <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -498,7 +511,7 @@
             </li>
             <li>
                 <img src="images/スポット10.jpg" alt="" class="round-img">
-                <div>
+                <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -524,7 +537,7 @@
         <span>
             宮古島おすすめお土産<br>
             <span class="bar"></span>
-            <p>SOUVENIR</p>
+            <p class="subtxt">SOUVENIR</p>
         </span>
     </div>
     <div class="main-content">
@@ -538,8 +551,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -553,8 +564,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -568,8 +577,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -583,8 +590,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -598,8 +603,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -613,8 +616,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -628,8 +629,6 @@
                     フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
 
@@ -640,11 +639,8 @@
             <div class="content">
                 <p class="content-title">
                     宮古島星空フォトツアー
-                    フォトコンテスト三社受賞
                 </p>
                 <span class="content-txt">宮古島の満天の星空、天の川を肉眼で観察しながらのハイクオリティーの星空フォトツアー<br></span>
-                <span class="price">23,890 - 35,980</span>
-                <span class="round"><i class="fas fa-greater-than"></i></span>
             </div>
         </div>
     </div>
@@ -671,7 +667,7 @@
         <span>
             宮古島旅行でよくある質問<br>
             <span class="bar"></span>
-            <p>QUESTION</p>
+            <p class="subtxt">QUESTION</p>
         </span>
     </div>
     <div class="AQ">
@@ -706,53 +702,104 @@
             宮古島が誇るサンゴの島を、シュノーケリングとグラスボード観光船でご案内、
         </p>
     </div>
-    <div class="btn-showdetail">
+    <div class="btn-showdetail show-detail">
         <span>
             ツアーをもっと見る >
         </span>
     </div>
 
     <!-- footer -->
-    <div class="pagrap">
+    <div class="footer">
         <p>日本最大！宮古島の最後の楽園<br>「WE・MARINE」で遊ぼう♪</p>
-        <ul>
-            <li></li>
+        <span class="horizonline"></span>
+        <p>宮古島と伊良部島を結ぶ全長3,540mの大橋。橋の中央部が高く、緩やかなアーチを描いています。
+            通り池
+            下地島にある、自然の神秘を感じられる双子の池。２つの池、水中でつながり、海にも通じています。
+            東平安名崎（ひがしへんなざき）</p>
+        <ul class="contact">
+            <li class="mail">
+                <span class="mail-title">メールでのお問い合わせ</span>
+                <p class="mail-content">
+                    宮古島を代表する絶景ビーチの一つ。透明度の高い海と、真っ白なパウダーサンドが印象的です。
+                </p>
+            </li>
+            <li class="phone">
+                <span class="phone-title">090-1234-5678</span>
+                <p class="phone-content">
+                    宮古島を代表する絶景ビーチの一つ。透明度の高い海と、真っ白なパウダーサンドが印象的です。
+                    青。
+                </p>
+            </li>
         </ul>
     </div>
-    <div class="AQ">
+    <div class="res-menu-footer">
+        <div class="follow">
+            <p class="line-follow"><span>FOLLOW US</span></p>
+            <p class="social-icon">
+                <img src="images/icon_youtube.svg" alt="" width="25px" height="25px">
+                <img src="images/icon_twitter.svg" alt="" width="25px" height="25px">
+                <img src="images/icon_instagram.svg" alt="" width="25px" height="25px">
+                <img src="images/download.png" alt="" width="25px" height="25px">
+            </p>
+            <p class="txt-mid">公式SNSアカウント</p>
+        </div>
         <ul class="menu-footer">
-            <li class="company">
-                <p>COMPANY</p>
+            <li>
+                <p class="title">COMPANY</p>
                 <p>会社情報</p>
                 <p>採用情報</p>
                 <p>グループ紹介</p>
                 <p>プライバシーポリシー</p>
             </li>
-            <li class="company">
-                <p>SERVICE</p>
+            <li>
+                <p class="title">SERVICE</p>
                 <p>会社情報</p>
                 <p>採用情報</p>
                 <p>グループ紹介</p>
                 <p>プライバシーポリシー</p>
             </li>
-            <li class="company">
-                <p>OTHERS</p>
+            <li>
+                <p class="title">OTHERS</p>
                 <p>会社情報</p>
                 <p>採用情報</p>
                 <p>グループ紹介</p>
-                <p>プライバシーポリシー</p>
-            </li>
-            <li class="follow">
-                <p class="line-follow"><span>FOLLOW US</span></p>
-                <p class="social-icon">
-                    <img src="images/icon_youtube.svg" alt="" width="25px" height="25px">
-                    <img src="images/icon_twitter.svg" alt="" width="25px" height="25px">
-                    <img src="images/icon_instagram.svg" alt="" width="25px" height="25px">
-                    <img src="images/download.png" alt="" width="25px" height="25px">
-                </p>
-                <p>公式SNSアカウント</p>
             </li>
         </ul>
+    </div>
+    <div class="div-menu-footer">
+        <ul class="menu-footer">
+            <li class="company">
+                <p class="title">COMPANY</p>
+                <p>会社情報</p>
+                <p>採用情報</p>
+                <p>グループ紹介</p>
+                <p>プライバシーポリシー</p>
+            </li>
+            <li class="company">
+                <p class="title">SERVICE</p>
+                <p>会社情報</p>
+                <p>採用情報</p>
+                <p>グループ紹介</p>
+                <p>プライバシーポリシー</p>
+            </li>
+            <li class="company">
+                <p class="title">OTHERS</p>
+                <p>会社情報</p>
+                <p>採用情報</p>
+                <p>グループ紹介</p>
+                <p>プライバシーポリシー</p>
+            </li>
+        </ul>
+        <div class="follow">
+            <p class="line-follow"><span>FOLLOW US</span></p>
+            <p class="social-icon">
+                <img src="images/icon_youtube.svg" alt="" width="25px" height="25px">
+                <img src="images/icon_twitter.svg" alt="" width="25px" height="25px">
+                <img src="images/icon_instagram.svg" alt="" width="25px" height="25px">
+                <img src="images/download.png" alt="" width="25px" height="25px">
+            </p>
+            <p class="txt-mid">公式SNSアカウント</p>
+        </div>
     </div>
     <div class="copy-right">
         <span class="copy-content">Copyright &copy; 2021 WE・MARINE Co.,Ltd. All rights reserved</span>

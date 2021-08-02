@@ -65,13 +65,80 @@ table {
     margin-left: 10px;
 }
 
-.hambuger-menu{
-    cursor: pointer;
-    display: block;
-    padding-bottom: 0;
+ /* hamburger menu */
+ .navigation{
+  position: fixed;
+  top: 57px;
+  right: 0;
+  width: 100%; /* 100% = fullscreen */
+  height: 100%;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  transition: transform 0.5s, opacity .2s;
+  transform: translateX(100%);
+  opacity: 0;  
+  border-left: 1px solid rgb(207, 207, 207);
+  z-index: 5;
+  background: hsla(0, 0%, 0%, 0.5);
+}
+.nav{
+  background: white;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border-top: 1px solid rgb(207, 207, 207);
+  border-left: 1px solid rgb(207, 207, 207);
+  z-index: 9;
+  top: -13.5px;
+}
+.navigation.show {
+  transform: translateX(0%);
+  opacity: 1;
+  padding-top: -20px;
+  z-index: 1;
+}
+body.show{
+height: 100%;
+overflow: hidden;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  cursor:initial;
+  height: inherit;
+  overflow: scroll;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  
+}
+.list li{
+  
+  position: relative;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}
+.list li i{
     position: absolute;
-    top:0;
-    right: 0;
+    right: 15px;
+    
+}
+.list li a{
+  padding: 15px 25px;
+  color: black;   
+   
+  display: block;
+}
+.list li a:hover{
+    background: rgb(252, 234, 210);
+}
+.hambuger-menu{
+  cursor: pointer;
+  display: block;
+  padding-bottom: 0;
+  position: absolute;
+  top:0;
+  right: 0;
 }
 .hamburger {
   cursor: pointer;
@@ -85,8 +152,9 @@ table {
   color: white;
   background: transparent;
   padding-top: 10px;
-
+  background-size: cover;
 }
+
 .hamburger span {
   position: absolute;
   left: 13px;
@@ -113,7 +181,8 @@ table {
 }
 .bottom-line.active {
   transform: translateY(-10px) rotate(-135deg);
-}
+} 
+/* end hamburger menu */
 
 .icon-list{
   display: flex;
@@ -389,12 +458,6 @@ table {
   mix-blend-mode: normal;
 }
 
-.AQ{
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 10px 30px;
-}
 
 .question{
   color: #0066FF;
@@ -421,14 +484,29 @@ table {
 .copy-content{
   display: table-cell;
   vertical-align: middle;
-}
-
-.menu-footer{
-  display: flex;
-  justify-content: space-around;
+  font-size: 12px;
+  padding: 0px 10px;
 }
 /* end slider */
 
+.div-menu-footer{
+  display: none;
+}
+
+.res-menu-footer{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  display: block;
+} 
+
+.follow{
+  display: table-cell;
+  vertical-align: middle;
+  width: 20%;
+  padding-top: 15px;
+}
 
 .line-follow{
   text-align: center;
@@ -437,9 +515,29 @@ table {
   white-space: nowrap;
 }
 
+.social-icon{
+  font-size: 30px;
+  text-align: center;
+  margin-top:5px;
+}
+
+.txt-mid{
+  text-align: center;
+}
+
+.menu-footer{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  text-align: center;
+}
+
 .line-follow > span{
   position: relative;
   display: inline-block;
+  font-size: 20px;
 }
 
 .line-follow span::before,
@@ -462,17 +560,85 @@ table {
   margin-left: 15px;
 }
 
-.social-icon{
-  font-size: 25px;
+.show-detail{
+  margin: 30px 0px;
+  position: relative;
+  display: block;
+}
+
+.mail-title{
+  background-color: #E60014;
+  padding: 10px 20px;
+}
+
+.phone-title{
+  background-color: #0066FF;
+  padding: 10px 65px;
+}
+
+.contact{
+  margin: 30px 0px;
+}
+
+.contact{
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.mail-content, .phone-content{
+  display: none;
+}
+
+.AQ{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+.title{
+  color: #0066FF;
+}
+
+.mail, .phone{
+  margin: 15px auto;
+}
+.phone-title{
+  padding: 10px 51px;
+}
+
+.arrow{
+  margin-left: 5px;
+}
+
+.menu-title{
+  font-weight: 600;
+}
+
+.subtxt{
+  font-family: 'Courgette', cursive;
+  color: #E60014;
+}
+
+.footer{
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.35);
+  background-image: url('../images/banner02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  color: #fff;
   text-align: center;
-  margin-top:5px;
+  font-size: 17px;
+  padding: 30px 155px;
+  line-height: 2em;
 }
 
-.follow{
-  display: table-cell;
-  vertical-align: middle;
+.star{
+  color: #FFF000;
 }
-
 @media screen and (min-width:768px){
   
 }
@@ -546,10 +712,10 @@ table {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 9999;
     background-color: #fff;
     position: fixed;
-    padding: 10px 0px;
+    padding: 5px 0px;
   }
 
   .topmenulist{
@@ -566,16 +732,6 @@ table {
     margin-right: 20px;
   }
 
-  .logoleft{
-    width: 170px;
-    margin-top: 5px;
-    background-image: url(../images/wemarine.jpg);
-    background-size: cover;
-    height: 110px;
-    background-repeat: no-repeat;
-    background-position: center;
-    float: left;
-  }
 
   .slideshow-container{
     width: 100%;
@@ -592,7 +748,6 @@ table {
 
   .top-button{
     float: left;
-    margin-top: 10px;
   }
   .btn-tourorder{
     padding: 10px 30px;
@@ -702,17 +857,17 @@ table {
     height: 1.5px;
     background: #0066FF;
     top: 50%;
-    width:400px;
+    width:350px;
   }
   
   .line > span:before {
     right: 100%;
-    margin-right: 15px;
+    margin-right: 50px;
   }
   
   .line > span:after {
     left: 100%;
-    margin-left: 15px;
+    margin-left: 50px;
   }
   .bar{
     display: none;
@@ -728,7 +883,7 @@ table {
     color: #fff;
     text-align: center;
     font-size: 17px;
-    padding: 120px 155px;
+    padding: 50px 155px;
     line-height: 2em;
   }
   .pagrap > p:nth-child(1){
@@ -783,7 +938,7 @@ table {
   
   .slide-controls {
     position:absolute;
-    top:45%;
+    top:50%;
     z-index:2;
     font-size:3em;
     font-weight:bold;
@@ -821,6 +976,7 @@ table {
     justify-content:space-around;
     flex-wrap: nowrap;
     font-size: 10px;
+    margin-top: 30px;
   }
 
   .round-img{
@@ -835,6 +991,58 @@ table {
 
   .p-content{
     font-size: 14px;
+    padding: 0px 20px;
   }
 
+  .div-menu-footer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    display: block;
+  }  
+  .res-menu-footer{
+    display: none;
+  }
+
+  .menu-footer{
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .follow{
+    padding-left: 50px;
+  }
+
+  .horizonline{
+    height: 1px;
+    width: 15%;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact{
+    display: flex;
+    justify-content:space-between;
+    font-size: 15px;
+    flex-wrap: nowrap;
+  }
+
+  .mail-content, .phone-content{
+    display:block;
+    padding: 10px 50px;
+  }
+  .mail{
+    border-right: 1px solid #fff;
+  }
+  .copy-right{
+    max-width: 100%;
+  }
+  .copy-content{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 0px;
+  }
 }
