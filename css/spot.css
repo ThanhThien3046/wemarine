@@ -1,0 +1,220 @@
+@charset "UTF-8";
+main{
+	width: 100%;
+	overflow: hidden;
+}
+.spot-topbar{
+	max-width: 1200px;
+	margin: auto;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 80%;
+}
+.spot-topbar i{
+	margin: 0 10px;
+}
+.spot{
+	width: 100%;
+	padding: 0 10px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.spot img{
+	width: 100%;
+	height: auto;
+}
+.spot .spot-title{
+	border-top: 2px solid #E60014;
+	color: black;
+	font-size: 110%;
+	padding-top: 10px;
+	font-weight: 600;
+}
+.spot .day{
+	font-size: 80%;
+	color: hsla(0,0%,18%,1.00);
+	padding: 8px 0;
+}
+.spot ul.social{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.spot ul.social li{
+	font-size: 80%;
+	color: white;
+	width: 48%;
+	text-align: center;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, "sans-serif";
+	letter-spacing: .05em
+
+}
+.spot ul.social li a{
+	color: white;
+	display: block;
+}
+.spot ul.social li:hover{
+	opacity: 0.7;
+}
+.spot ul.social li i{
+	margin-right: 10px;
+	font-size: 110%;
+}
+.spot ul.social li:nth-child(1){
+	background: #3B73E3;
+}
+.spot ul.social li:nth-child(2){
+	background: #4E9AE3;
+}
+.spot ul.social li:nth-child(3){
+	background: #DF3122;
+}
+.spot ul.social li:nth-child(4){
+	background-image: linear-gradient(to right top, #EFCD4D, #CC2D2F,#9A209A);
+}
+/*ーーーーーーーーーーーーーーーーーーLISTーSPOT　ここからーーーーーーーーーーーー*/
+.spot ul.list-spot{
+	
+}
+.spot ul.list-spot li:first-child{
+	border: none;
+}
+.spot ul.list-spot li{
+	border-top:1px solid hsla(0,0%,73%,1.00);
+	margin-bottom: 20px;
+} 
+.spot ul.list-spot h3{
+	font-weight: 600;
+	border-left: 5px solid #0066FF;
+	padding-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-size: 105%;
+}
+.spot ul.list-spot p{
+	margin-bottom: 3px;
+}
+.spot ul.list-spot p:nth-child(3){
+	margin-bottom: 15px
+}
+.spot ul.list-spot strong{
+	font-weight: 600;
+}
+.spot ul.list-spot img{
+	margin: 7px 0;
+}
+/*ーーーーーーーーーーーーーーーーーーLISTーSPOT　ここまでーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーおすすめツアー　ここからーーーーーーーーーーーー*/
+.list-tour{
+	margin-top: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.list-tour-title{
+	border-top: 2px solid #E60014;
+	font-size: 110%;
+	font-weight: 600;
+	padding-top: 15px;
+}
+.list-tour ul{
+	
+}
+.list-tour ul li a{
+	display: flex;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+.list-tour ul li img{
+	width: 100%;
+	height: auto;
+}
+.list-tour ul li p{
+	width: 80%;
+}
+.list-tour ul li p:nth-child(1){
+	margin-right: 10px;
+}
+.list-tour ul li p{
+	width: 80%;
+	margin-right: 0px;
+
+}
+.list-tour ul li p span.red{
+	display: block;
+	font-size: 110%;
+	color: #E60014;
+}
+/*ーーーーーーーーーーーーーーーーーーおすすめツアー　ここまでーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーバナーここからーーーーーーーーーーーー*/
+.list-banner{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.list-banner img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.list-banner img:nth-child(1){
+	border-top: 2px solid #E60014;
+	padding-top: 25px;
+}
+.list-banner img:nth-child(3){
+	margin-bottom: 0;
+}
+/*ーーーーーーーーーーーーーーーーーーバナーここまでーーーーーーーーーーーー*/
+@media Screen and (min-width:480px){
+	.spot ul.social li{
+		width: 24%;
+	}
+}
+@media Screen and (min-width:768px){
+	.spot-topbar{
+		margin-top: 8px;
+	}
+	.spot-tour{
+		max-width: 1200px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;	
+	}
+	.spot{
+		width: 67%;
+		margin-top: 5px;
+
+	}
+	.spot .spot-title{
+		padding-top: 20px;
+	}
+	.list-tour-banner{
+		min-width: 300px;
+		position: sticky;
+		width: 28%;
+		margin-top: 0;
+	}
+	.list-tour{
+		padding-top: 0;
+		margin-top:5px;
+		border-top: 2px solid #E60014;
+		padding: 0;
+	}
+	.list-tour ul li p{
+		font-size: 80%;
+	}
+	.list-tour ul li p span.red{
+		margin-top: 10px;
+	}
+	.list-tour-title{
+		padding: 0;
+		padding-top: 15px;
+		border: none;
+	}
+}

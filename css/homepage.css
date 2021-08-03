@@ -126,7 +126,6 @@ overflow: hidden;
 .list li a{
   padding: 15px 25px;
   color: black;   
-   
   display: block;
 }
 .list li a:hover{
@@ -154,7 +153,6 @@ overflow: hidden;
   padding-top: 10px;
   background-size: cover;
 }
-
 .hamburger span {
   position: absolute;
   left: 13px;
@@ -314,16 +312,22 @@ overflow: hidden;
   margin-right: 5px;
 }
 .top{
-  position: fixed;
-  width: 100%;
-  z-index: 2;
+	position: sticky;
+	top:0;
+  	width: 100%;
+  	z-index: 2;
+	border-bottom: 1px solid hsla(0,0%,85%,1.00);
 }
-
+.header{
+	position: sticky;
+	top:0;
+	border-bottom: 1px solid hsla(0,0%,85%,1.00);
+}
 .nav-top{
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  z-index: 3;
+  	width: 100%;
+  	background-color: #fff;
+  	z-index: 5;
+
 }
 .line{
   text-align: center;
@@ -650,11 +654,10 @@ overflow: hidden;
 }
 @media screen and (min-width:991px){
   .header{
+	  display: none;
       width: 100%;
-      /* background-color: rgb(30, 87, 194); */
       margin: 0 auto;
       color: #fff;
-      /* max-width: 1024px; */
   }
   .top-nav > ul > li{
       list-style-type: none;
@@ -720,7 +723,6 @@ overflow: hidden;
     justify-content: center;
     z-index: 9999;
     background-color: #fff;
-    position: fixed;
     padding: 5px 0px;
   }
 
