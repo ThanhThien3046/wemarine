@@ -335,20 +335,12 @@ overflow: hidden;
 	position: sticky;
 	top:0;
 	border-bottom: 1px solid hsla(0,0%,85%,1.00);
+	z-index: 5;
 }
 .nav-top{
-<<<<<<< HEAD
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  z-index: 3;
-  border-bottom: 1px solid rgb(94, 93, 93);
-=======
   	width: 100%;
   	background-color: #fff;
   	z-index: 5;
-
->>>>>>> 3
 }
 .line{
   text-align: center;
