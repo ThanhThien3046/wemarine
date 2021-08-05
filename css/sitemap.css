@@ -1,0 +1,218 @@
+@charset "UTF-8";
+.photo-banner{
+	position: relative;
+}
+.photo-banner .bana{
+	height: 230px;
+	overflow: hidden;
+	background-size: cover;
+	background-image:url("../images/banner/question-banner.jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.photo-banner .bana h1{
+	font-size: 230%;
+	font-family: 凸版文久見出しゴシック;
+	color: black;
+	  -webkit-text-fill-color: white; 
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: hsla(0,0%,29%,1.00);
+	text-shadow: 1px 3px 2px hsla(0,0%,29%,1.00);
+}
+.photo-banner .bana span{
+	background: #FFF000 ;
+	padding: 5px;
+	width: 200px;
+	text-align: center;
+	margin-top: 5px;
+	border: 1px solid hsla(0,0%,45%,1.00);
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+.photo-banner:before{
+	background-image:url("../images/banner/banner-bottom.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: block;
+	content: "";
+	bottom: -21px;
+	position: absolute;
+	z-index: 1;
+	height: 50px;
+	width: 100%;
+}
+/*ーーーーーーーーーーーーーーーーーーーバナーここまでーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーーサイトマップここからーーーーーーーーーーーー*/
+.site{
+	width: 100%;
+	padding: 0 10px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.site .site-title{
+	color: black;
+	font-size: 110%;
+	padding-top: 20px;
+	font-weight: 600;
+	padding-bottom: 3px;
+	border-bottom: 1px solid hsla(0,0%,72%,1.00)
+}
+.site i{
+	color: #0066FF;
+	margin-right: 10px;
+}
+.site ul li p{
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.site ul li p a{
+	
+}
+.site ul li p a:hover{
+	text-decoration: underline;
+}
+/*ーーーーーーーーーーーーーーーーーーーサイトマップここまでーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーーおすすめツアーここからーーーーーーーーーーーー*/
+.list-tour{
+	margin-top: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.list-tour-title{
+	border-top: 2px solid #E60014;
+	font-size: 110%;
+	font-weight: 600;
+	padding-top: 15px;
+}
+.list-tour ul{
+	
+}
+.list-tour ul li a{
+	display: flex;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+.list-tour ul li img{
+	width: 100%;
+	height: auto;
+}
+.list-tour ul li p{
+	width: 80%;
+}
+.list-tour ul li p:nth-child(1){
+	margin-right: 10px;
+}
+.list-tour ul li p{
+	width: 80%;
+	margin-right: 0px;
+
+}
+.list-tour ul li p span.red{
+	display: block;
+	font-size: 110%;
+	color: #E60014;
+}
+/*ーーーーーーーーーーーーーーーーーーおすすめツアー　ここまでーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーバナーここからーーーーーーーーーーーー*/
+.list-banner{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.list-banner img{
+	width: 100%;
+	height: auto;
+}
+.list-banner li{
+	margin-bottom: 20px;
+}
+.list-banner li:first-child{
+	border-top: 2px solid #E60014;
+	padding-top: 20px;
+}
+.list-banner li:nth-child(3){
+	margin-bottom: 0;
+}
+@media Screen and (min-width:768px){
+	.photo-banner .bana h1{
+		font-size: 300%;
+		text-shadow: 2px 4px 2px hsla(0,0%,29%,1.00);
+	}
+	.photo-banner .bana{
+		height: 350px;
+	}
+	.site-tour{
+		max-width: 1200px;
+		padding: 10px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;		
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.site{
+		width: 70%;
+		margin-top: 5px;
+		border: 1px solid hsla(0,0%,87%,1.00);
+		padding: 20px;
+		margin-right: 10px;
+	}
+	.site .site-title{
+		padding-top: 20px;
+		font-size: 120%;
+		border-bottom: none;
+	}
+	.site ul{
+		border-top: 2px solid #E60014;
+		display:flex;
+		justify-content: space-between;
+	}
+	.site ul li{
+		width: 48%;
+	}
+	.site ul li p{
+		margin-bottom: 20px;
+	}
+	.list-tour-banner{
+		width: 300px;
+		top:0;
+		overflow: auto;
+		margin-top: 0;
+	}
+	.list-tour-banner a:hover{
+		opacity: 0.7
+	}
+	.list-tour{
+		border: 1px solid hsla(0,0%,87%,1.00);
+		padding: 10px;
+		padding-top: 0;
+		margin-top:5px;
+	}
+	.list-tour ul li p{
+		font-size: 80%;
+	}
+	.list-tour ul li p span.red{
+		margin-top: 10px;
+	}
+	.list-tour-title{
+		padding: 0;
+		margin-top: 20px;
+		padding-top: 15px;
+		box-sizing: border-box;
+		
+	}
+	.list-banner{
+		padding: 0;
+		padding-top: 20px;
+	}
+}
