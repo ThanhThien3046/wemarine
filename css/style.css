@@ -43,7 +43,6 @@ font-weight: 600;
 
 .content-txt{
 font-size: 11px;
-height: 55px;
 }
 .price{
 color: #E60014;
@@ -363,7 +362,6 @@ display: none;
 
 .content-txt{
     font-size: 13px;
-    height: 75px;
 }
 .price{
     font-size: 16px;
@@ -377,8 +375,6 @@ display: none;
     float: right;
     margin-right: 5px;
 }
-  
-
 
 .line{
     text-align: center;
@@ -599,7 +595,6 @@ display: none;
 
     .content-txt{
         font-size: 13px;
-        height: 75px;
     }
     .price{
         font-size: 16px;
