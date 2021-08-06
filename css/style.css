@@ -97,29 +97,37 @@ color: #E60014;
 margin: 0 auto;
 text-align: center;
 margin: 0px 0px 40px 0px;
+
 }
 
 .btn-showdetail > span{
-border: 1px solid #acafaf;
-padding: 10px 40px;
+  border: 1px solid #acafaf;
+  padding: 10px 40px;
+  background: linear-gradient(to right,#fff 50%, #fff 50%);
+  background-position: right bottom;
+  transition: all .5s linear;
+}
+
+.btn-showdetail > span:hover{
+  background-position: left bottom;
+  background: linear-gradient(to right, #E60014 100%, #fff 50%);
+  color: white;
 }
   
-
-
 .line-follow > span{
-position: relative;
-display: inline-block;
-font-size: 20px;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .line-follow span::before,
 .line-follow span::after {
-content: "";
-position: absolute;
-height: 1.5px;
-background: #c0c3c7;
-top: 50%;
-width:400px;
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  background: #c0c3c7;
+  top: 50%;
+  width:400px;
 }
 
 .line-follow > span:before {
