@@ -38,16 +38,37 @@ object-fit: cover;
 color: #0066FF;
 font-size: 12px;
 font-weight: 600;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
 /* position: absolute; */
 }
 
 .content-txt{
 font-size: 11px;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+overflow: hidden;
 }
 .price{
 color: #E60014;
 font-weight: 600;
 font-size: 12px;
+}
+.content-block{
+  position: relative;
+  padding-bottom: 50px;
+
+}
+.price_round{
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 5px;
 }
 .round{
 border-radius: 50%;
@@ -161,7 +182,6 @@ font-size: 14px;
 padding: 10px 20px;
 }
 .content{
-position: relative;
 padding: 0px 5px;
 }
 
