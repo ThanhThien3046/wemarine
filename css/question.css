@@ -17,8 +17,8 @@
 	flex-direction: column;
 	justify-content: center;
 }
-.question-banner .bana p{
-	font-size: 250%;
+.question-banner .bana h1{
+	font-size: 230%;
 	font-family: 凸版文久見出しゴシック;
 	color: black;
 	  -webkit-text-fill-color: white; 
@@ -73,7 +73,6 @@
 	margin-bottom: 20px;
 	padding: 10px;
 	box-sizing: border-box;
-
 }
 .question-list dl{
 	display: flex;
@@ -104,7 +103,7 @@
 	padding: 4px 0 0 5px;
 }
 @media Screen and (min-width:768px){
-	.question-banner .bana p{
+	.question-banner .bana h1{
 		font-size: 300%;
 		text-shadow: 2px 4px 2px hsla(0,0%,29%,1.00);
 	}
@@ -123,6 +122,7 @@
 		font-size: 100%;
 	}
 	.question-list ul li{
+		padding: 20px;
 		border-radius: 10px;
 		margin-bottom: 40px;
 		margin-top: 20px;
@@ -134,9 +134,16 @@
 	}
 	.question-list dl:nth-child(1){
 		font-size: 115%;
-		
 	}
 	.question-list dl dd{
 		padding: 6px 0 0 10px;
+	}
+	.question-list dl dt{
+		line-height: 1.8em;
+		margin-top: 4px;
+		margin-right: 10px;
+	}
+	.question-list dl dd {
+		line-height: 1.8em
 	}
 }
