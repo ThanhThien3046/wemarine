@@ -16,7 +16,6 @@ Background: #F4FFFF */
 	padding-top: 10px;
 }
 .nav-top{
-	
 	box-sizing: border-box;
   	width: 100%;
   	background-color: #fff;
@@ -159,9 +158,15 @@ body.show{
 .top-menu{
 	display: none;
 }
-/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーheader-smt ここまでーーーーーーーーーーーーーー*/
+header .arrow{
+  margin-left: 5px;
+}
+header{
+  display: none;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーheader-smt ここまでーーーーーーーーーーーーーー*/
 
-
+/*ーーーーーーーーーーーーーーーーーーーーーーーCONTACT ここからーーーーーーーーーーーーーー*/
 .contact{
 	margin: 0 auto;
 	background-color: #000;
@@ -180,7 +185,7 @@ body.show{
 	width: 100%;
 	height: 100%;
 	z-index: 0;
-	background: url('../images/banner02.jpg') no-repeat center center;
+	background: url('../images/about-banner.jpg') no-repeat center center;
 	background-size: cover;
 	opacity: 0.3;
 }
@@ -189,12 +194,12 @@ body.show{
 	position: relative;
 	width: 100%;
 	display: inherit;
-	font-family: ヒラギノ明朝 ProN;
+	
 }
 .contact-title{
 	color: #FFF000;
 	font-size: 130%;
-	font-family:ヒラギノ明朝 ProN;
+	font-family: ヒラギノ明朝 ProN;
 }
 .contact-content p{
 	margin-top: 10px;
@@ -208,16 +213,7 @@ body.show{
 	display: block;
 	margin: 5px auto;
 }
-.div-menu-footer{
-	display: none;
-}
-.res-menu-footer{
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 10px 30px;
-	display: block;
-} 
+
 .contact ul{
 	margin: 30px auto;
 	display: flex;
@@ -232,71 +228,139 @@ body.show{
 	display: flex;
 	justify-content:space-between;
 }
-.mail-content, .phone-content{
-	display: none;
-}
+
 .contact ul li .mail-title{
 	background-color: #E60014;
 	width: 100%;
+	max-width: 300px;
 	padding: 10px 0;
+	box-sizing: border-box;
+	margin: auto;
 	margin-bottom: 20px;
+	border: .1px solid #CACACA;
 }
 .contact ul li .phone-title{
 	background-color: #0066FF;
-	box-sizing: border-box;
 	width: 100%;
+	max-width: 300px;
 	padding: 10px 0;
+	box-sizing: border-box;
+	margin: auto;
+	border: .1px solid white;
 }
-.contact a{
+.contact ul li i{
+	margin-right: 10px;
+}
+.contact ul li a{
 	color: white;
 }
+.contact ul li p{
+	display: none;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーCONTACT ここまでーーーーーーーーーーーーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーFOOTER ここからーーーーーーーーーーーーーー*/
+footer{
+	background:hsla(180,100%,98%,1.00);
+	overflow: hidden;
+}
+.footer{
+	
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	display: block;
+} 
 .follow{
-  display: table-cell;
-  vertical-align: middle;
-  width: 20%;
-  padding-top: 15px;
+	margin: auto;
+	padding-top: 10px;
 }
-
 .line-follow{
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
+	font-family: ヒラギノ明朝 ProN;
+	text-align: center;
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	font-weight: 600;
+	font-size: 110%;
+	margin: auto;
+	z-index: 1;
+	max-width: 300px;
 }
-
+.line-follow::after{
+	display: block;
+	content: "";
+	width: 70px;
+	height:1px ;
+	background:hsla(0,0%,56%,1.00);
+	position: absolute;
+	top:11px;	
+}
+.line-follow::before{
+	display: block;
+	content: "";
+	width: 70px;
+	height:1px ;
+	background:hsla(0,0%,56%,1.00);
+	position: absolute;
+	top:11px;
+	z-index: 0;
+	right: 0;
+	
+}
 .social-icon{
-  font-size: 30px;
-  text-align: center;
-  margin-top:5px;
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+	margin-top:8px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 200px;
 }
-
+.social-icon a{
+	width: 17%;
+}
+.social-icon img{
+	width: 100%;
+	height: auto;
+}
 .txt-mid{
-  text-align: center;
+	text-align: center;
+	font-size: 95%;
 }
 .menu-footer{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  float: left;
-  font-size: 12px;
-  text-align: left;
-  margin: 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 500px;
+	font-size: 14px;
+	text-align: left;
+	margin: 10px auto;
+	margin-top: 25px;
 }
-.title{
-  color: #0066FF;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 600;
+.footer-title{
+	font-family: ヒラギノ明朝 ProN;
+	color: #0066FF;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 600;
 }
-.arrow{
-  margin-left: 5px;
+.menu-footer li{
+
 }
-header{
-  display: none;
+.menu-footer p{
+	margin-bottom: 2px;
 }
-.copy-content{
-   font-size: 12px;
+.copy-right{
+	text-align: center;
+	background: black;
+	color: white;
+	 font-size: 14px;
+	padding: 10px;
 }
+
 @media screen and (min-width:768px){
 	.header-smt{
 		display: none;
@@ -311,7 +375,6 @@ header{
 	}
 	.logoleft{
 		width: 80px;
-		
 	  }
 	.logoleft img{
 		width: 100%;
@@ -322,7 +385,6 @@ header{
 		width: 100%;
 		margin: 0 auto;
 		display: block;
-		
 	}
 	.topbar a{
 		color: white;
@@ -348,7 +410,6 @@ header{
 	.leftbar a:not(:first-child){
 		margin-left: 10px;
 	}
-
 	.rightbar a:not(:last-child){
 		margin-right: 10px;
 	}
@@ -399,93 +460,104 @@ header{
 	.top-button{
 		display: none;
 	} 
-/*
-	.topmenulist li:active{
-    	border-bottom: 2px solid #E60014;
-  	}
-	.active_tab{
-		border-bottom: 2px solid #E60014;
+/*	ーーーーーーーーーーーーーーーーーーーheaderここまでーーーーーーーーーーーーーーーーー*/
+
+/*	ーーーーーーーーーーーーーーーーーーーCONTACT ここからーーーーーーーーーーーーーーーーー*/
+	.contact-title{
+		color: #FFF000;
+		font-size: 170%;
+		padding-top: 25px;
 	}
-*/
+	.contact-content p{
+		margin-top: 10px;
+		font-size: 110%;
+	}
+	.contact-line{
+		width: 170px;
+		margin: 8px auto;
+	}
+  	.contact ul{
+		margin: 30px auto;
+		display: flex;
+		justify-content:space-between;
+		flex-wrap: nowrap;
+		font-size: 16px;
+		width: 100%;
+		max-width: 850px;
+	}
+	.contact ul li{
+		max-width: 800px;
+		width: 100%;	
+		display:block;
+		flex-wrap: nowrap;
+		padding: 20px 0;
 
+	}
+	.contact ul li i{
+		 font-size: 115%;
+	}
+	.contact ul li.mail{
+		padding-right: 50px;
+	}
+	.contact ul li.phone{
+		padding-left: 50px;
+	}
+	.contact ul li .mail-title{
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+		padding: 15px 0;
+		margin-bottom: 0;
+	}
+	.contact ul li .phone-title{
+		display: inline-block;
+		max-width: 100%;
+		padding: 15px 0;
+	}
+	.contact ul li p{
+		display:block;
+		width: 100%;
+		max-width: 100%;
+		text-align: left;
+		font-size: 100%;
+	}
+	.mail{
+		border-right: 1px solid #fff;
+	}
+/*	ーーーーーーーーーーーーーーーーーーーheaderここまでーーーーーーーーーーーーーーーーー*/
 
-  
-.phone-title{
-  padding: 10px 54px;
-}
-  
-  .contact{
-    margin: 20px auto;
-    background: rgba(0, 0, 0, 0.35);
-    background-image: url('../images/banner02.jpg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    color: #fff;
-    text-align: center;
-    font-size: 17px;
-    /* padding: 50px 155px; */
-     line-height: 2em;
-  }
-  .contact > p:nth-child(1){
-    color: #FFF000;
-    font-size: 26px;
-  } 
-  .div-menu-footer{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 30px;
-    display: block;
-  }  
-  .res-menu-footer{
-    display: none;
-  }
+/*	ーーーーーーーーーーーーーーーーーーーCONTACT ここからーーーーーーーーーーーーーーーーー*/
+	.footer{
+		padding-top: 50px;
+		
+	}
+	.footer .follow{
+		float: right;
+		width: 35%;
 
-  .menu-footer{
-    width: 60%;
-    font-size: 16px;
-  }
+		padding-top: 30px;
 
-  .follow{
-    padding-left: 50px;
-  }
+	}
+	.footer-title{
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+	.menu-footer{
+		float: left;
+		width: 58%;
+		max-width: 800px;
 
-  .contact ul{
-    display: flex;
-    justify-content:space-between;
-    font-size: 15px;
-    flex-wrap: nowrap;
-  }
-
-  .mail-content, .phone-content{
-    display:block;
-    padding: 10px 50px;
-  }
-  .mail{
-    border-right: 1px solid #fff;
-  }
-  .copy-right{
-    max-width: 100%;
-  }
-  .copy-content{
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 14px;
-    padding: 0px;
-  }
-
-
-  .title{
-    font-weight: normal;
-    font-size: 20px;
-  }
-
-  .menu-footer{
-    margin: 0px 0px 20px 0px;
-  }
-
-
+		margin: 0px 0px 20px 0px;
+		padding-bottom: 30px;
+		font-size: 100%;
+	}
+	.menu-footer p{
+		margin-bottom: 10px;
+	}
+	.copy-right{
+		clear: both;
+		padding: 13px;
+	}
 }
 @media screen and (min-width:991px){
 	.logoleft{
@@ -533,79 +605,7 @@ header{
 	.btn-carorder:hover{
 		opacity: .6;
 	}
-  .contact{
-    margin: 20px auto;
-    background-color: #000;
-    position: relative;
-    text-align: center;
-    font-size: 17px;
-    padding: 50px 155px;
-    line-height: 2em;
-  }
-  .contact::before{
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: url('../images/banner02.jpg') no-repeat center center;
-    background-size: cover;
-    opacity: 0.3;
-  }
 
-
-  .contact-content{
-    color: #fff;
-    position: relative;
-    width: 100%;
-    display: inherit;
-  }
-
-
-
-
-  .div-menu-footer{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 30px;
-    display: block;
-  }  
-  .res-menu-footer{
-    display: none;
-  }
-
-  .menu-footer{
-    width: 60%;
-    font-size: 16px;
-  }
-
-  .follow{
-    padding-left: 50px;
-  }
-
-
-  .mail-content, .phone-content{
-    display:block;
-    padding: 10px 50px;
-  }
-  .mail{
-    border-right: 1px solid #fff;
-  }
-  .copy-right{
-    max-width: 100%;
-  }
-  .title{
-    font-weight: normal;
-    font-size: 20px;
-  }
-
-  .menu-footer{
-    margin: 0px 0px 20px 0px;
-  }
    .horizonline{
     width: 150px;
   } 
