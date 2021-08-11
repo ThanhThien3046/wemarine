@@ -144,6 +144,10 @@ table {
     position:relative;
 }
 
+.company-line{
+    padding:10px 0px;
+    text-align: center;
+}
 
 @media screen and (min-width:768px){
     .about_bar{
@@ -204,14 +208,14 @@ table {
     }
 
     .company-line{
-        padding-top:50px;
+        padding:50px 0px 20px 0px;
     }
 }
 
 @media screen and (min-width:991px){
     .about_bar{
         height: 2px;
-        width: 75%;
+        width: 9%;
     }
 
     .title{
@@ -219,7 +223,7 @@ table {
     }
 
     .tbl{
-        width: 100%;
+        width: 95%;
         max-width: 1200px;
     }
 
