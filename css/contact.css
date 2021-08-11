@@ -13,8 +13,19 @@
     background-color: rgb(236, 236, 236);
 }
 
-.td_title{
+.tbl .row:nth-child(odd) .td_title{
     text-align: unset;
+    padding: 10px;
+}
+
+.tbl .row:nth-child(even) .td_title{
+    text-align: unset;
+    padding: 10px 0px;
+}
+
+.contact-select{
+    width: 100%;
+    padding: 10px;
 }
 
 .txt{
@@ -57,4 +68,86 @@
     color: #fff;
     border: 2px solid #3f51b5;
     margin: 0 auto;
+}
+
+.tbl{
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+}
+
+.photo-banner{
+	position: relative;
+}
+.photo-banner .bana{
+	height: 230px;
+	overflow: hidden;
+	background-size: cover;
+	background-image:url("../images/banner/question-banner.jpg");
+	background-repeat: no-repeat;
+	 background-position: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.photo-banner .bana h1{
+	font-size: 230%;
+	font-family: 凸版文久見出しゴシック;
+	color: black;
+	  -webkit-text-fill-color: white; 
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: hsla(0,0%,29%,1.00);
+	text-shadow: 1px 3px 2px hsla(0,0%,29%,1.00);
+}
+.photo-banner .bana span{
+	background: #FFF000 ;
+	padding: 5px;
+	width: 200px;
+	text-align: center;
+	margin-top: 5px;
+	border: 1px solid hsla(0,0%,45%,1.00);
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+.photo-banner:before{
+	background-image:url("../images/banner/banner-bottom.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	display: block;
+	content: "";
+	bottom: -21px;
+	position: absolute;
+	z-index: 1;
+	height: 50px;
+	width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .tbl{
+        width: 100%;
+        max-width: 1200px;
+    }
+    .td_title{
+        padding: 20px;
+    }
+    .row{
+        border: 1px solid rgb(165, 161, 161);
+    }
+}
+
+@media screen and (min-width:991px){
+    .main01{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .tbl{
+        width: 90%;
+        max-width: 1200px;
+    }
+
 }

@@ -190,7 +190,6 @@ header{
 	opacity: 0.3;
 }
 .contact-content{
-	color: #fff;
 	position: relative;
 	width: 100%;
 	display: inherit;
@@ -357,7 +356,7 @@ footer{
 	text-align: center;
 	background: black;
 	color: white;
-	 font-size: 14px;
+	font-size: 12px;
 	padding: 10px;
 }
 
@@ -534,7 +533,6 @@ footer{
 	.footer .follow{
 		float: right;
 		width: 35%;
-
 		padding-top: 30px;
 
 	}
@@ -546,7 +544,6 @@ footer{
 		float: left;
 		width: 58%;
 		max-width: 800px;
-
 		margin: 0px 0px 20px 0px;
 		padding-bottom: 30px;
 		font-size: 100%;
@@ -557,6 +554,10 @@ footer{
 	.copy-right{
 		clear: both;
 		padding: 13px;
+		font-size: 14px;
+	}
+	.menu-footer li p a:hover{
+		text-decoration: underline;
 	}
 }
 @media screen and (min-width:991px){
