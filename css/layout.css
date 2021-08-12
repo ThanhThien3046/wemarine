@@ -569,6 +569,18 @@ footer{
 	.menu-footer li p a:hover{
 		text-decoration: underline;
 	}
+	.line-follow{
+		font-size: 22px;
+	}
+	.line-follow::after{
+		top: 15px;
+		content: " ";
+	}
+	.line-follow::before{
+		top: 15px;
+		content: " ";
+	}
+
 }
 @media screen and (min-width:991px){
 	.logoleft{

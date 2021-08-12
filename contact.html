@@ -153,26 +153,27 @@
     <div class="main">
         <div class="photo-banner">
             <div class="bana">
-            <h1>CONTACT FORM</h1>
-            <a href=""><span>フォトギャラリー</span></a>
+                <h1>CONTACT FORM</h1>
+                <span>フォトギャラリー</span>
             </div>
         </div>
         <div class="main01">
             <div class="contact-content">
                 <p>
-                    宮古島と伊良部島を結ぶ全長3,540mの大橋。橋の中央部が高く、緩やかなアーチを描いています。
-                    通り池
-                    下地島にある、自然の神秘を感じられる双子の池。２つの池、水中でつながり、海にも通じています。
-                    東平安名崎（ひがしへんなざき）
-                    宮古島の最東端に位置する、約2kmにもわたる細長い岬。自然の雄大さを感じられます。 
-                    来間大橋（くりまおおはし）
-                    宮古島と来間島とを結ぶ全長1,690mの大橋。橋の上から望む絶景ビューでも知られています。 
-                    宮古ブルーに魅せられて9年連続で宮古島上陸！
-                    マリンハートに魅了され8回目の八重干瀬！
-                    青い空＆宮古ブルーに向かっての飛び込み！
+                    ツアー内容やその他ご不明な点は、下記入力フォームに必要事項をご記入の上、お気軽にお尋ねください。<br>
+                    ご質問の内容によっては、回答までにお時間をいただく場合もございます。<br>
+                    <b>
+                        お急ぎの方は、お電話にてご確認ください。<br>
+                        ・ショップ : 050-5578-2017 <br>
+                        ・スタッフ直通 : 050-5578-2017 <br>
+                    </b>
+                    ( 営業時間 9 : 00～19 : 00 ) <br>
+                    ご返答は入力頂いたメールアドレスへお届けしておりますが、お客様のメールソフトの設定によっては迷惑メールフォルダに入ってしまう場合
+                    があります。<br>
+                    数日経過してもご返答が届いていない場合は、迷惑メールフォルダに入っていないかご確認ください。<br>
                 </p>
             </div>
-            <form action="" method="">
+            <form action="" method="" class="phone-form">
                 <table class="tbl">
                     <tr class="row">
                         <td class="td_title">
@@ -198,51 +199,141 @@
                     <tr class="row">
                         <td class="td_title">
                             <p class="txt">
-                                <span>お問い合わせ頂目</span>
+                                <span>お名前</span>
                                 <span class="required">必須</span>
                             </p>
                         </td>
                     </tr>
                     <tr class="row">
                         <td class="td_title">
-                            <input name="email" value="dsadsa" type="text" class="contact-select">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例）宮古島太郎">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>電話番号</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例) 090 1234 5678">
                         </td>
                     </tr>
                     <tr class="row">
                         <td class="td_title">
                             <p class="txt">
-                                <span>お問い合わせ頂目</span>
+                                <span>メールアドレス</span>
                                 <span class="required">必須</span>
                             </p>
                         </td>
                     </tr>
                     <tr class="row">
-                        <td class="td_title">ghs</td>
+                        <td class="td_title">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例) info@wemarine.co.jp">
+                        </td>
                     </tr>
                     <tr class="row">
                         <td class="td_title">
                             <p class="txt">
-                                <span>お問い合わせ頂目</span>
+                                <span>お問い合わせ内容</span>
                                 <span class="required">必須</span>
                             </p>
                         </td>
-                    </tr>
-                    <tr class="row">
-                        <td class="td_title">代表取締役</td>
                     </tr>
                     <tr class="row">
                         <td class="td_title">
-                            <p class="txt">
-                                <span>お問い合わせ頂目</span>
-                                <span class="required">必須</span>
-                            </p>
+                            <textarea rows="7" maxlength="500" name="message" class="contact-select" placeholder="お問い合わせ内容を入力ください"></textarea>
                         </td>
-                    </tr>
-                    <tr class="row">
-                        <td class="td_title">事業内容</td>
                     </tr>
                 </table>
-                <div><button type="submit" class="submit-btn">送信します</button></div>
+                <div class="form-input cus_checkbox">
+                    <label class="container">
+                        <input type="checkbox" name="agree">
+                        <span class="checkmark"></span>
+                        お問い合わせにおかける個人情報の取り扱いについて同意する
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">送信します</button>
+            </form>
+
+            <!-- PC form -->
+            <form action="" method="" class="phone-pc">
+                <table class="tbl">
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>お問い合わせ頂目</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                        <td class="td_title">
+                            <select name="pets" class="contact-select">
+                                <option value="">選択してください</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                                <option value="goldfish">Goldfish</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>お名前</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                        <td class="td_title">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例）宮古島　太郎">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>電話番号</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                        <td class="td_title">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例）090 1234 5678">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>メールアドレス</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                        <td class="td_title">
+                            <input name="email" value="" type="text" class="contact-select" placeholder="例）info@wemarine.co.jp">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="td_title">
+                            <p class="txt">
+                                <span>お問い合せ内容</span>
+                                <span class="required">必須</span>
+                            </p>
+                        </td>
+                        <td class="td_title">
+                            <textarea rows="7" maxlength="500" name="message" class="contact-select" placeholder="お問い合わせ内容をご入力ください"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-input cus_checkbox">
+                    <label class="container">
+                        <input type="checkbox" name="agree">
+                        <span class="checkmark"></span>
+                        お問い合わせにおかける個人情報の取り扱いについて同意する
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">送信します</button>
             </form>
         </div>
     </div>
