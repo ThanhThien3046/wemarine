@@ -46,28 +46,21 @@
 }
 
 .submit-btn{
-    display: inline-block;
-    color: #142149;
+    display: block;
+    margin: 10px auto;
     text-align: center;
-    white-space: normal;
-    word-wrap: break-word;
-    vertical-align: middle;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: transparent;
     padding: 0.7rem 1.5rem 0.6rem;
     font-size: 0.81rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    margin: 0.375rem;
     border: 2px solid transparent;
     border-radius: 0.125rem;
     background-color: #3f51b5;
     color: #fff;
     border: 2px solid #3f51b5;
-    margin: 0 auto;
 }
 
 .tbl{
@@ -125,17 +118,86 @@
 	height: 50px;
 	width: 100%;
 }
+.container{
+    font-size: 13px;
+    padding: 10px;
+}
 
+.phone-form{
+    display: block;
+}
+.phone-pc{
+    display: none;
+}
 @media screen and (min-width:768px){
     .tbl{
         width: 100%;
-        max-width: 1200px;
+        max-width: 768px;
     }
     .td_title{
         padding: 20px;
     }
     .row{
         border: 1px solid rgb(165, 161, 161);
+    }
+
+    .phone-form{
+        display: none;
+    }
+
+    .submit-btn{
+        font-size: 15px;
+        padding: 10px 60px;
+        background-color: #fff;
+        color: #3f51b5;
+        margin: 30px auto;
+    }
+    .submit-btn:hover{
+        background-color: #3f51b5;
+        color: #fff;
+    }
+
+    .row:nth-of-type(odd) .td_title{
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .tbl .row:nth-child(odd) .td_title{
+        text-align: unset;
+        padding: 10px;
+    }
+    
+    .tbl .row:nth-child(even) .td_title{
+        text-align: unset;
+        padding: 10px;
+    }
+
+    .tbl .row .td_title:nth-child(1){
+        text-align: unset;
+        padding: 10px;
+        width: 250px;
+        border-right: 1px solid rgb(165, 161, 161);
+        background-color: rgb(236, 236, 236);
+        vertical-align: middle;
+    }
+
+    .tbl .row .td_title:nth-child(1) .txt span:nth-child(1){
+        margin: 0 auto;
+    }
+
+    .tbl .row .td_title:nth-child(2){
+        background-color: #fff;
+    }
+    .phone-pc{
+        display: block;
+    }
+    .form-input{
+        text-align: center;
+    }
+    .container{
+        font-size: 15px;
+    }
+    .photo-banner .bana {
+        height: 350px;
     }
 }
 
