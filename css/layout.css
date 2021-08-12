@@ -249,9 +249,15 @@ header{
 }
 .contact ul li i{
 	margin-right: 10px;
-}
+}  
 .contact ul li a{
 	color: white;
+}
+.contact ul li .mail-title:hover{
+	background-color:hsla(355,100%,35%,1.00)
+}
+.contact ul li .phone-title:hover{
+	background-color:#004DC0
 }
 .contact ul li p{
 	display: none;
@@ -264,7 +270,6 @@ footer{
 	overflow: hidden;
 }
 .footer{
-	
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -307,7 +312,6 @@ footer{
 	top:11px;
 	z-index: 0;
 	right: 0;
-	
 }
 .social-icon{
 	font-size: 30px;
@@ -320,6 +324,9 @@ footer{
 }
 .social-icon a{
 	width: 17%;
+}
+.social-icon a:hover{
+	opacity: .7;
 }
 .social-icon img{
 	width: 100%;
@@ -387,6 +394,9 @@ footer{
 	}
 	.topbar a{
 		color: white;
+	}
+	.topbar a:hover{
+		opacity: .7;
 	}
 	.topbarcontent{
 		width: 100%;

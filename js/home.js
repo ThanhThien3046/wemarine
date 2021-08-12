@@ -1,5 +1,12 @@
 // js for hambuger responsive 
-    $(function() {
+//$(function() {
+//	$(".slides-wrapper").hover(function(){
+//		$(".slide-controls").toggleClass("active");
+//	});
+//
+//});
+
+$(function() {
     $("#js-hamburger").click(function () {
         $("#js-top-line").toggleClass("active");
         $("#js-center-line").toggleClass("active");
@@ -16,7 +23,7 @@
   
   var slidesWrapperWidth, slideWidth, slideNumber, imgSrc, sliderInterval;
   //animation controls
-  var pause = 4000;
+  var pause = 3000;
   var transition = 500;
   
   //turn img into repsonsive full-bg img
