@@ -44,10 +44,10 @@ Background: #F4FFFF */
 	opacity: 0;  
 	border-left: 1px solid rgb(207, 207, 207);
 	z-index: 5;
-	background:white;
+	background:hsla(0,0%,0%,0.79);
 }
 .navigation　.nav{
-	background: white;
+	background:hsla(0,0%,0%,0.79);
 	position: fixed;
 	right: 0;
 	width: 100%;
@@ -68,30 +68,51 @@ body.show{
 	height: 100%;
 	overflow: hidden;
 }
-.navigation　.list {
+.navigation .list {
 	display: flex;
 	flex-direction: column;
 	cursor:initial;
 	height: inherit;
 	overflow: scroll;
-	padding-bottom: 60px;
 	box-sizing: border-box;
+	background: white;
+	width: 320px;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	top: 0;
+	padding: 13px;
+	padding-bottom: 60px;
 }
 .navigation　.list li{
 	position: relative;
 	border-bottom: 1px solid rgb(196, 196, 196);
 }
+.navigation .list li.list-top{
+	background: hsla(0,0%,93%,1.00);
+	border-radius: 5px;
+	padding: 13px;
+	font-family: ヒラギノ角ゴ Pro;
+	font-weight: 600;
+}
 .navigation .list li i{
     position: absolute;
-    right: 15px;
+    right: 25px;
+	margin-top: 4px;
 }
 .navigation .list li a{
-	padding: 15px 25px;
+	padding: 13px;
+	box-sizing: border-box;
 	color: black;   
 	display: block;
+	border-bottom: 1px dotted hsla(0,0%,91%,1.00);
 }
 .navigation .list li a:hover{
-    background: rgb(252, 234, 210);
+	text-decoration: underline;
+	background: hsla(0,0%,95%,1.00)
+}
+.navigation .list li.list-bottom a{
+	border-bottom: none;
 }
 .hambuger-menu{
 	cursor: pointer;
