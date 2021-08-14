@@ -122,12 +122,22 @@
                 <div id="js-nav" class="navigation">
                     <nav class="nav">
                         <ul class="list">
-                            <li><a href="../index.html">ホーム<i class="fas fa-angle-right"></i></a></li>
+							<li class="list-top">サービス</li>
                             <li><a href="contact.html">ツアー案内<i class="fas fa-angle-right"></i></a></li>
                             <li><a href="spot.html">観光スポット<i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="about.html">ショップ案内<i class="fas fa-angle-right"></i></a></li>
                             <li><a href="photo.html">フォトギャラリー<i class="fas fa-angle-right"></i></a></li>
-                            <li><a href="question.html">よくある質問<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="contact.html">ツアー予約<i class="fas fa-angle-right"></i></a></li>
+							<li class="list-bottom"><a href="https://werentacar.jp">レンタカー予約<i class="fas fa-angle-right"></i></a></li>
+							
+							<li class="list-top">会社案内</li>
+                            <li><a href="../index.html">会社情報<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="contact.html">採用情報<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="spot.html">グループ紹介<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="about.html">お問い合わせ<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="photo.html">よくある質問<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href="question.html">サイトマップ<i class="fas fa-angle-right"></i></a></li>
+							 <li><a href="question.html">個人情報取扱い<i class="fas fa-angle-right"></i></a></li>
+							 <li class="list-bottom"><a href="question.html">プライバシポリシー<i class="fas fa-angle-right"></i></a></li>
                         </ul>
                     </nav>
                 </div>
