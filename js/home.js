@@ -7,6 +7,20 @@
 //});
 
 $(function() {
+    $(".center").slick({
+        // dots: true,
+        // infinite: true,
+        // centerMode: true,
+        // slidesToShow: 3,
+        // centerPadding: '60px'
+        dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  centerMode: true,
+  variableWidth: true
+    });
+
     $("#js-hamburger").click(function () {
         $("#js-top-line").toggleClass("active");
         $("#js-center-line").toggleClass("active");

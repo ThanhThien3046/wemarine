@@ -1,4 +1,13 @@
-
+.slider__homepage{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.item{
+	padding: 0 5px;
+}
+.slider__homepage img{
+	height: 300px;
+}
 /* ーーーーーーーーーーーーーーーーーーーーSLIDERここからーーーーーーー */
 
 #slider {
