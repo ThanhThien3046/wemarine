@@ -8,17 +8,19 @@
 
 $(function() {
     $(".center").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
         // dots: true,
         // infinite: true,
-        // centerMode: true,
+        speed: 300,
         // slidesToShow: 3,
-        // centerPadding: '60px'
-        dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 3,
-  centerMode: true,
-  variableWidth: true
+        // centerMode: true,
+        // variableWidth: true
+        adaptiveHeight: true,
+        centerMode: true,
+        slidesToShow: 3,
+        variableWidth: true
     });
 
     $("#js-hamburger").click(function () {

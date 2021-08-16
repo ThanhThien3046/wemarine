@@ -490,6 +490,25 @@ footer{
 	.top-button{
 		display: none;
 	} 
+
+	.slider__homepage{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.slider__homepage img{
+		width: auto;
+		height: 100%;
+		max-height: 300px;
+	}
+	/* the slides */
+	.slider__homepage .slick-slide {
+		margin: 0 5px;
+		overflow: hidden;
+	}
+	/* the parent */
+	.slider__homepage .slick-list {
+		margin: 0 -5px;
+	}
 /*	ーーーーーーーーーーーーーーーーーーーheaderここまでーーーーーーーーーーーーーーーーー*/
 
 /*	ーーーーーーーーーーーーーーーーーーーCONTACT ここからーーーーーーーーーーーーーーーーー*/
