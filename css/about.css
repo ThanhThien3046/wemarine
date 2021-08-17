@@ -150,6 +150,9 @@ table {
     text-align: center;
 }
 
+.staff-profile-title{
+    font-weight: bold;
+}
 @media screen and (min-width:768px){
     .about_bar{
         height: 2px;
