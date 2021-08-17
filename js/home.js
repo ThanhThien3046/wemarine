@@ -11,18 +11,16 @@ $(function() {
         dots: true,
         infinite: true,
         slidesToShow: 1,
-        // dots: true,
-        // infinite: true,
-        speed: 300,
-        // slidesToShow: 3,
-        // centerMode: true,
-        // variableWidth: true
+        autoplay:true,
+        autoplaySpeed: 3000,
         adaptiveHeight: true,
         centerMode: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         variableWidth: true
-    });
+    })
+});
 
+$(function() {
     $("#js-hamburger").click(function () {
         $("#js-top-line").toggleClass("active");
         $("#js-center-line").toggleClass("active");
@@ -30,7 +28,7 @@ $(function() {
         $("#js-nav").toggleClass("show");
             $("body").toggleClass("show");
     });
-    });
+});
 
 // end js for hambuger responsive 
 
