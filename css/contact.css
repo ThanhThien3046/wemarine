@@ -129,6 +129,10 @@
 .phone-pc{
     display: none;
 }
+
+.contact-style{
+    font-weight: bold;
+}
 @media screen and (min-width:768px){
     .tbl{
         width: 100%;
