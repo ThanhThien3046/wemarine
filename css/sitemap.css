@@ -73,9 +73,6 @@
 	margin-bottom: 10px;
 	margin-right: 10px;
 }
-.site ul li p a{
-	
-}
 .site ul li p a:hover{
 	text-decoration: underline;
 }
@@ -92,9 +89,6 @@
 	font-size: 110%;
 	font-weight: 600;
 	padding-top: 15px;
-}
-.list-tour ul{
-	
 }
 .list-tour ul li a{
 	display: flex;
@@ -164,7 +158,6 @@
 		width: 70%;
 		margin-top: 5px;
 		border: 1px solid hsla(0,0%,87%,1.00);
-		padding: 20px;
 		margin-right: 10px;
 	}
 	.site .site-title{

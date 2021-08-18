@@ -10,6 +10,7 @@
    <link rel="stylesheet" type="text/css" href="../css/reboot.css">
     <link rel="stylesheet" type="text/css" href="../css/layout.css">
 	<link rel="stylesheet" type="text/css" href="../css/awesome.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<script type="text/javascript" src="../js/jquery360.min.js"></script>
     <script type="text/javascript" src="../js/home.js"></script>
 <!-- TemplateBeginEditable name="head" -->
