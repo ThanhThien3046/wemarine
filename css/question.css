@@ -23,8 +23,8 @@
 	color: black;
 	  -webkit-text-fill-color: white; 
 	  -webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color: hsla(0,0%,29%,1.00);
-	text-shadow: 1px 3px 2px hsla(0,0%,29%,1.00);
+	  -webkit-text-stroke-color: rgb(74, 74, 74);
+	text-shadow: 1px 3px 2px rgb(74, 74, 74);
 }
 .question-banner .bana span{
 	background: #FFF000 ;
@@ -32,7 +32,7 @@
 	width: 200px;
 	text-align: center;
 	margin-top: 5px;
-	border: 1px solid hsla(0,0%,45%,1.00);
+	border: 1px solid rgb(115, 115, 115);
 	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
 }
 .question-banner:before{
@@ -68,7 +68,7 @@
 	padding-top: 20px;
 }
 .question-list ul li{
-	border: 1px solid hsla(0,0%,85%,1.00);
+	border: 1px solid rgb(217, 217, 217);
 	overflow: hidden;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -80,7 +80,7 @@
 .question-list dl:nth-child(1){
 	margin-bottom: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted hsla(0,0%,81%,1.00);
+	border-bottom: 1px dotted rgb(207, 207, 207);
 	font-weight: 600;
 }
 .question-list dl dt p{
@@ -105,7 +105,7 @@
 @media Screen and (min-width:768px){
 	.question-banner .bana h1{
 		font-size: 300%;
-		text-shadow: 2px 4px 2px hsla(0,0%,29%,1.00);
+		text-shadow: 2px 4px 2px rgb(74, 74, 74);
 	}
 	.question-banner .bana{
 		height: 350px;

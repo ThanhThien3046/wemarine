@@ -29,7 +29,7 @@
 }
 .spot .day{
 	font-size: 80%;
-	color: hsla(0,0%,18%,1.00);
+	color: rgb(46, 46, 46);
 	padding: 8px 0;
 }
 .spot ul.social{
@@ -82,7 +82,7 @@
 	border: none;
 }
 .spot ul.list-spot li{
-	border-top:1px solid hsla(0,0%,73%,1.00);
+	border-top:1px solid rgb(186, 186, 186);
 	margin-bottom: 20px;
 } 
 .spot ul.list-spot h3{
@@ -191,7 +191,7 @@
 		
 		width: 70%;
 		margin-top: 5px;
-		border: 1px solid hsla(0,0%,87%,1.00);
+		border: 1px solid rgb(222, 222, 222);
 		padding: 20px;
 		margin-right: 10px;
 	}
@@ -216,7 +216,7 @@
 		opacity: 0.7
 	}
 	.list-tour{
-		border: 1px solid hsla(0,0%,87%,1.00);
+		border: 1px solid rgb(222, 222, 222);
 		padding: 10px;
 		padding-top: 0;
 		margin-top:5px;

@@ -9,7 +9,7 @@ Background: #F4FFFF */
 .header-smt{
 	position: sticky;
 	top:0;
-	border-bottom: 1px solid hsla(0,0%,85%,1.00);
+	border-bottom: 1px solid rgb(217, 217, 217);
     background-color: #fff ;
     z-index: 10;
     padding-bottom: 5px;
@@ -41,13 +41,13 @@ Background: #F4FFFF */
 	box-sizing: border-box;
 	transition: transform 0.5s, opacity .2s;
 	transform: translateX(100%);
-	opacity: 0;  
+	opacity: 0.79;  
 	border-left: 1px solid rgb(207, 207, 207);
 	z-index: 5;
-	background:hsla(0,0%,0%,0.79);
+	background:#000;
 }
 .navigation　.nav{
-	background:hsla(0,0%,0%,0.79);
+	background:#000;
 	position: fixed;
 	right: 0;
 	width: 100%;
@@ -57,6 +57,7 @@ Background: #F4FFFF */
 	border-left: 1px solid rgb(207, 207, 207);
 	z-index: 9;
 	top: -13.5px;
+	opacity: 0.79;
 }
 .navigation.show {
 	transform: translateX(0%);
@@ -89,7 +90,7 @@ body.show{
 	border-bottom: 1px solid rgb(196, 196, 196);
 }
 .navigation .list li.list-top{
-	background: hsla(0,0%,93%,1.00);
+	background: rgb(237, 237, 237);
 	border-radius: 5px;
 	padding: 13px;
 	font-family: ヒラギノ角ゴ Pro;
@@ -105,11 +106,11 @@ body.show{
 	box-sizing: border-box;
 	color: black;   
 	display: block;
-	border-bottom: 1px dotted hsla(0,0%,91%,1.00);
+	border-bottom: 1px dotted rgb(232, 232, 232);
 }
 .navigation .list li a:hover{
 	text-decoration: underline;
-	background: hsla(0,0%,95%,1.00)
+	background: rgb(242, 242, 242)
 }
 .navigation .list li.list-bottom a{
 	border-bottom: none;
@@ -275,7 +276,7 @@ header{
 	color: white;
 }
 .contact ul li .mail-title:hover{
-	background-color:hsla(355,100%,35%,1.00)
+	background-color:rgb(179, 0, 15)
 }
 .contact ul li .phone-title:hover{
 	background-color:#004DC0
@@ -287,7 +288,7 @@ header{
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーFOOTER ここからーーーーーーーーーーーーーー*/
 footer{
-	background:hsla(180,100%,98%,1.00);
+	background:rgb(245, 255, 255);
 	overflow: hidden;
 }
 .footer{
@@ -319,7 +320,7 @@ footer{
 	content: "";
 	width: 70px;
 	height:1px ;
-	background:hsla(0,0%,56%,1.00);
+	background:rgb(143, 143, 143);
 	position: absolute;
 	top:11px;	
 }
@@ -328,7 +329,7 @@ footer{
 	content: "";
 	width: 70px;
 	height:1px ;
-	background:hsla(0,0%,56%,1.00);
+	background:rgb(143, 143, 143);
 	position: absolute;
 	top:11px;
 	z-index: 0;
@@ -398,7 +399,7 @@ footer{
 		top:0;
 		width: 100%;
 		z-index: 2;
-		border-bottom: 1px solid hsla(0,0%,80%,1.00);
+		border-bottom: 1px solid rgb(204, 204, 204);
 	}
 	.logoleft{
 		width: 80px;
