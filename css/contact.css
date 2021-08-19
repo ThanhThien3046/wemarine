@@ -93,8 +93,8 @@
 	color: black;
 	  -webkit-text-fill-color: white; 
 	  -webkit-text-stroke-width: 1px;
-	  -webkit-text-stroke-color: hsla(0,0%,29%,1.00);
-	text-shadow: 1px 3px 2px hsla(0,0%,29%,1.00);
+	  -webkit-text-stroke-color: rgb(74, 74, 74);
+	text-shadow: 1px 3px 2px rgb(74, 74, 74);
 }
 .photo-banner .bana span{
 	background: #FFF000 ;
@@ -102,7 +102,7 @@
 	width: 200px;
 	text-align: center;
 	margin-top: 5px;
-	border: 1px solid hsla(0,0%,45%,1.00);
+	border: 1px solid rgb(115, 115, 115);
 	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
 }
 .photo-banner:before{

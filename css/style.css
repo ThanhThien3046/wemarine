@@ -66,19 +66,20 @@
 	color: #FFF000;
 	width: 25px;
 	height: 25px;
-	background:hsla(180,100%,98%,.30);
+	background:rgb(245, 255, 255);
 	border-radius:50%;
 	display: block;
 	text-align: center;
 	flex-direction: column;
 	align-items: center;
 	font-size: 106%;
+	opacity: 0.3;
 }
 
 
 .slide-controls:hover {
-	background:hsla(180,100%,98%,.50);
-
+	background:rgb(245, 255, 255);
+	opacity: 0.5;
 	cursor:pointer;
 }
 .slide-left {
@@ -136,7 +137,7 @@ padding: 0px 5px;
 .content-block{
 	width: 47%;
 	margin:0 auto;
-	border: 1px solid hsla(0,0%,75%,1.00);
+	border: 1px solid rgb(191, 191, 191);
 	margin-bottom: 20px;
 	position: relative;
 	padding-bottom: 40px;
@@ -199,7 +200,7 @@ padding: 0px 5px;
 }
 .btn-showdetail a{
 	margin: 10px auto;
-	border: 1px solid hsla(0,0%,84%,1.00);
+	border: 1px solid rgb(214, 214, 214);
 	padding: 10px 20px;
 	box-sizing: border-box;
 	color: #E60014 ;
@@ -455,7 +456,7 @@ padding: 0px 5px;
 	
 }
 .question- ul li{
-	border-bottom: 1px solid hsla(0,0%,87%,1.00);
+	border-bottom: 1px solid rgb(222, 222, 222);
 	padding: 13px 0;
 }
 .question- ul li p{
@@ -478,7 +479,7 @@ padding: 0px 5px;
 }
 .question-btn a{
 	margin: 10px auto;
-	border: 1px solid hsla(0,0%,84%,1.00);
+	border: 1px solid rgb(214, 214, 214);
 	padding: 10px 20px;
 	box-sizing: border-box;
 	color: #E60014 ;
@@ -803,19 +804,20 @@ padding: 0px 5px;
 		color: #FFF000;
 		width: 35px;
 		height: 35px;
-		background:hsla(180,100%,98%,.30);
+		background:rgb(245, 255, 255);
 		border-radius:50%;
 		display: block;
 		text-align: center;
 		flex-direction: column;
 		align-items: center;
 		font-size: 150%;
+		opacity: 0.3;
 	}
 
 
 	.slide-controls:hover {
-		background:hsla(180,100%,98%,.50);
-
+		background:rgb(245, 255, 255);
+		opacity: 0.5;
 		cursor:pointer;
 	}
 	.slide-left {

@@ -76,10 +76,10 @@ table {
   box-sizing: border-box;
   transition: transform 0.5s, opacity .2s;
   transform: translateX(100%);
-  opacity: 0;  
+  opacity: 0.5;  
   border-left: 1px solid rgb(207, 207, 207);
   z-index: 5;
-  background: hsla(0, 0%, 0%, 0.5);
+  background: #000;
 }
 .nav{
   background: white;
@@ -240,7 +240,8 @@ overflow: hidden;
 
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgb(0,0,0);
+  opacity: 0.8;
 }
 
 .dot {
@@ -316,12 +317,12 @@ overflow: hidden;
 	top:0;
   	width: 100%;
   	z-index: 2;
-	border-bottom: 1px solid hsla(0,0%,85%,1.00);
+	border-bottom: 1px solid rgb(217, 217, 217);
 }
 .header{
 	position: sticky;
 	top:0;
-	border-bottom: 1px solid hsla(0,0%,85%,1.00);
+	border-bottom: 1px solid rgb(217, 217, 217);
   background-color: #fff ;
   z-index: 10;
 }
@@ -655,7 +656,8 @@ overflow: hidden;
 
 .footer{
   margin: 20px auto;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgb(0, 0, 0);
+  opacity: 0.35;
   background-image: url('../images/banner02.jpg');
   background-size: cover;
   background-position: center;
@@ -942,7 +944,8 @@ overflow: hidden;
 
   .pagrap{
     margin: 20px auto;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgb(0, 0, 0);
+    opacity: 0.35;
     background-image: url('../images/banner02.jpg');
     background-size: cover;
     background-position: center;
