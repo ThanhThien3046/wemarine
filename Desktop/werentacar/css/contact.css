@@ -1,0 +1,222 @@
+.contact-top{
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	font-size:75%;
+	margin-top: 5px;
+}
+.contact-top a{
+	text-decoration: underline;
+}
+.contact-top i{
+	margin: 0 10px;
+	color:hsla(0,0%,31%,1.00);
+}
+.title_contact{
+	font-size: 110%;
+	font-weight: 600;
+	border-bottom: 1px solid #edad3e;
+	padding-bottom: 5px;
+	margin-top: 20px;
+}
+.bar{
+    background-color: #0067b6;
+    border-left: 12px solid #edad3e;
+    display: block;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 15px;
+	color: white;
+}
+.pagrap{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.pagrap a{
+    text-decoration: underline;
+    color: #2c6bc6;
+}
+.person_info_form{
+    margin: 0 auto;
+    width: 100%;
+}
+.person_info{
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+}
+.person_info tr td{
+    box-sizing: border-box;
+    display: block;
+	overflow: hidden;
+}
+.person_info tr:nth-child(1) td:nth-child(2){
+    border-right: none;
+}
+.person_info tr:nth-child(1) td:nth-child(3){
+    border-left: none;
+    padding-left: 0px;
+}
+.person_info tr td input{
+    width: 100%;
+    /* max-width: 670px; */
+    height: 40px;
+    margin: 10px 0px;
+    border: 1px solid #939393;
+    box-sizing: border-box;
+    outline: none;
+	padding-left: 7px;
+}
+.person_info  tr td textarea{
+    height: 200px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #939393;
+	box-sizing: border-box;
+	padding: 7px;
+	outline: none;
+	font-family: none;
+}
+.person_info tr td:nth-child(1){
+    background-color:hsla(0,0%,91%,1.00);
+    width: 100%;
+    padding: 10px 10px;
+
+    box-sizing: border-box;
+    vertical-align: top;
+	margin: 5px 0;
+	position: relative;
+	
+}
+.person_info tr td:nth-child(1) .type{
+    background-color: #d1011b;
+    font-size: 10px;
+    color: #fff;
+    padding: 3px 4px;
+    margin-right: 5px;
+    box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.verify{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.verify input{
+	cursor: pointer;
+}
+.verify label{
+	cursor: pointer;
+}
+.verify button{
+    font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	border: none;
+	background-color: #edad3e;
+	box-shadow: 2px 2px 2px hsla(0,0%,47%,1.00);
+	color: white;
+	display: block;
+	margin: auto;
+	margin-top: 14px;
+	padding: 8px 95px;
+    font-size: 15px;
+	cursor: pointer;
+}
+.verify button:hover{
+	background: #0067b6;
+}
+
+.form-check tr td:nth-child(2){
+	padding: 10px 0;
+	width: 100%;
+	height: auto;
+	
+}
+
+.form-check p{
+
+
+}
+.submit{
+	margin:20px auto;
+	text-align: center;
+}
+
+.submit input{
+	background: #edad3e;
+	cursor: pointer;
+	color: white;
+	border: none;
+	margin:10px;
+	padding: 8px 50px;
+}
+.submit input:nth-child(1){
+	background: hsla(0,0%,60%,1.00);
+}
+.submit input:nth-child(1):hover{
+	background: hsla(0,0%,40%,1.00);
+}
+.submit input:nth-child(2):hover{
+	background: #0067b6;
+}
+@media screen and (min-width:768px) {
+	.title_contact {
+		font-size: 120%;
+		margin-bottom: 50px;
+		margin-top: 30px;
+	}
+    .contact-top{
+        font-size: 90%;
+        margin-top: 10px;
+    }
+    .person_info  tr td{
+        display: table-cell;
+    }
+	
+    .person_info tr td:nth-child(1){
+        width: 30%;
+		padding-top: 18px;
+		padding-bottom: 15px;
+    }
+	.form-check tr{
+		width: 100%;
+
+		overflow: hidden;
+	}
+	.form-check tr td:nth-child(2){
+		padding-top: 18px;
+		padding-left: 10px;
+		width: 70px;
+	}
+    .person_info{
+        border: 1px solid #8f8e8d;
+    }
+    .person_info  tr td{
+        border: 1px solid #8f8e8d;
+    }
+    .person_info  tr td input{
+        width: 96%;
+        margin: 10px;
+    }
+    .pagrap{
+        font-size: 100%;
+    }
+    .verify{
+        font-size: 100%;
+		margin-top: 30px;
+    }
+    .person_info  tr:nth-child(1) td:nth-child(2) input{
+        width: 95%;
+    }
+    
+    .person_info  tr:nth-child(1) td:nth-child(3) input{
+        width: 95%;
+        margin-left: 0px;
+    }
+	.person_info  tr td textarea{
+		height: 200px;
+		margin: 10px 10px;
+		width: 96%;
+	}
+
+}
